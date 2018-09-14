@@ -1,0 +1,21 @@
+﻿@using WebApiOData.Models;
+
+@model List<MdmDealer>
+
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a href="~/">ASP.NET Web API</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div>
+            @foreach (MdmDealer dealer in @Model)
+            {
+                <p>@dealer.FullName</p>
+            }
+        </div>
+    </body>
